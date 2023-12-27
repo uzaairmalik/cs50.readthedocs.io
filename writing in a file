@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+  FILE *fp=NULL;
+  char ch='a';
+  fp=fopen("uzair.txt","w");//creating a file type variable
+  if(fp==NULL)
+  {
+  	printf("the file you entered doesnot exists");
+  	exit(1);
+  }
+  fprintf(fp,"%c",ch);
+  fclose(fp);
+}
